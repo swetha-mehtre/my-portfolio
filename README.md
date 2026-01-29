@@ -1,5 +1,7 @@
 # Swetha Mehtre - Personal Portfolio
 
+**🚀 Live Demo:** [https://swetha-mehtre.github.io/my-portfolio/](https://swetha-mehtre.github.io/my-portfolio/)
+
 A fully responsive, professional personal portfolio website showcasing my work as an AI & Data Science Intern. Currently featuring my education, projects, publications, and contact information.
 
 ## Technologies Used

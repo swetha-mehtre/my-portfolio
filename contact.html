@@ -202,64 +202,23 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <!-- Auth Logic -->
+  <!-- Simple Client-Side "Auth" (Click to Reveal) -->
   <script>
     const loginBtn = document.getElementById('login-btn');
     const contactContent = document.getElementById('contact-content');
     const authWall = document.getElementById('auth-wall');
     const authMessage = document.getElementById('auth-message');
 
-    function showContent(username) {
-      authWall.style.display = 'none';
-      contactContent.style.display = 'block';
-      authMessage.innerText = `Welcome, ${username}!`;
-    }
-
     if (loginBtn) {
       loginBtn.addEventListener('click', () => {
+        // Simulate a processing delay for realism
+        loginBtn.innerHTML = '<ion-icon name="hourglass-outline"></ion-icon><span>Verifying...</span>';
 
-        // 1. Check for Placeholder Config (Dev Mode)
-        // We access the global firebaseConfig object if possible, or check typical error conditions
-        /* Note: cannot easily access localized firebaseConfig variable from here if it is not global, 
-           but we can try-catch the auth call. */
-
-        // 2. Check for Local File Protocol (Fix for "operation not supported")
-        if (window.location.protocol === 'file:') {
-          alert("Development Notice: Google Sign-In requires a live server (http/https) and does not work on local files (file://). \n\nBypassing authentication for local testing!");
-          showContent("Local Developer");
-          return;
-        }
-
-        if (typeof firebase === 'undefined' || typeof auth === 'undefined') {
-          authMessage.innerText = "Error: Firebase is not configured.";
-          return;
-        }
-
-        auth.signInWithPopup(provider)
-          .then((result) => {
-            const user = result.user;
-            console.log("User signed in:", user);
-            showContent(user.displayName);
-          }).catch((error) => {
-            console.error("Auth Error:", error);
-
-            // Fallback for placeholder keys if typical error occurs
-            if (error.code === 'auth/api-key-not-valid' || error.code === 'auth/internal-error') {
-              alert("Firebase Config Error: It looks like you haven't added your real API keys yet.\n\nSimulating login so you can see the layout.");
-              showContent("Guest (Simulated)");
-            } else {
-              authMessage.innerText = "Authentication failed: " + error.message;
-            }
-          });
-      });
-    }
-
-    // Check if already signed in (only works on http/https)
-    if (typeof auth !== 'undefined' && window.location.protocol !== 'file:') {
-      auth.onAuthStateChanged((user) => {
-        if (user) {
-          showContent(user.displayName);
-        }
+        setTimeout(() => {
+          authWall.style.display = 'none';
+          contactContent.style.display = 'block';
+          // Optional: You can play a success sound here if desired
+        }, 800); // 800ms delay
       });
     }
   </script>
