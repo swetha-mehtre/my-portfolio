@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swetha Mehtre - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <!-- TODO: Update with your avatar image -->
+          <img src="./assets/images/my-avatar.png" alt="Swetha Mehtre" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Swetha Mehtre">Swetha Mehtre</h1>
+          <p class="title">AI & Data Science Intern</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:swethamehtre@gmail.com" class="contact-link">swethamehtre@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+918660137643" class="contact-link">+91 8660137643</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="2004-01-30">January 30, 2004</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Bidar / Mysore / Bangalore</address>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://github.com/swetha-mehtre" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/swetha-mehtre-6619442a9" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.youtube.com/@swethamehtre8250" target="_blank" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link="about">About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="resume">Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="education">Education</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="projects">Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="youtube">YouTube</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="publications">Publications</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="contact">Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi, I'm Swetha, an aspiring data scientist with a passion for turning data into actionable insights. With a
+            strong academic background (8.4 CGPA) and hands-on experience in Python, SQL, and Machine Learning, I've
+            developed a Multimodal AI system for disease detection and delivered impactful data insights.
+          </p>
+          <p>
+            I am a Kaggle Bronze Medalist and data storyteller with Power BI dashboards. Currently, I am a 7th sem BE
+            student in Computer Science and Data Science at Maharaja Institute of Technology, Mysore (VTU University),
+            and working as an AI & Data Science Intern at Scontinent Technology, Bangalore.
+          </p>
+
+          <!-- Skills Section -->
+          <h3 class="h3 service-title">Skills</h3>
+          <ul class="skills-list" style="display: flex; flex-wrap: wrap; gap: 15px; padding-left: 0;">
+            <li class="skill-tag"
+              style="background: var(--border-gradient-onyx); padding: 8px 16px; border-radius: 20px; color: var(--light-gray); font-size: 14px; box-shadow: var(--shadow-2);">
+              Python</li>
+            <li class="skill-tag"
+              style="background: var(--border-gradient-onyx); padding: 8px 16px; border-radius: 20px; color: var(--light-gray); font-size: 14px; box-shadow: var(--shadow-2);">
+              SQL</li>
+            <li class="skill-tag"
+              style="background: var(--border-gradient-onyx); padding: 8px 16px; border-radius: 20px; color: var(--light-gray); font-size: 14px; box-shadow: var(--shadow-2);">
+              Machine Learning</li>
+            <li class="skill-tag"
+              style="background: var(--border-gradient-onyx); padding: 8px 16px; border-radius: 20px; color: var(--light-gray); font-size: 14px; box-shadow: var(--shadow-2);">
+              Power BI</li>
+            <li class="skill-tag"
+              style="background: var(--border-gradient-onyx); padding: 8px 16px; border-radius: 20px; color: var(--light-gray); font-size: 14px; box-shadow: var(--shadow-2);">
+              Data Analysis</li>
+            <li class="skill-tag"
+              style="background: var(--border-gradient-onyx); padding: 8px 16px; border-radius: 20px; color: var(--light-gray); font-size: 14px; box-shadow: var(--shadow-2);">
+              HTML/CSS/JS</li>
+            <li class="skill-tag"
+              style="background: var(--border-gradient-onyx); padding: 8px 16px; border-radius: 20px; color: var(--light-gray); font-size: 14px; box-shadow: var(--shadow-2);">
+              Flutter</li>
+          </ul>
+        </section>
+
+        <!-- service -->
+        <section class="service">
+          <h3 class="h3 service-title">What I'm doing</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Analyst</h4>
+                <p class="service-item-text">
+                  Analyzing complex datasets to derive actionable insights and driving data-informed decision making.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI & Data Science Intern</h4>
+                <p class="service-item-text">
+                  Working as an intern in AI and Data Science, building predictive models and exploring multimodal AI
+                  systems.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+
+
+
+
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+          <a href="./assets/documents/resume.pdf" class="form-btn" download
+            style="display: inline-flex; align-items: center; gap: 10px; margin-left: auto; font-size: 14px; padding: 10px 20px;">
+            <ion-icon name="cloud-download-outline"></ion-icon>
+            <span>Download CV</span>
+          </a>
+        </header>
+
+        <iframe src="./assets/documents/resume.pdf" width="100%" height="800px"
+          style="border: none; border-radius: 20px;">
+        </iframe>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #EDUCATION & INTERNSHIP (Replaces Portfolio)
+      -->
+
+      <article class="portfolio" data-page="education">
+
+        <header>
+          <h2 class="h2 article-title">Education & Experience</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Maharaja Institute of Technology, Mysore (VTU University)</h4>
+              <span>2022 — 2026 (Expected)</span>
+              <p class="timeline-text">
+                BE in Computer Science & Data Science (7th Sem)
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Guru Nanak Independent PU College, Bidar</h4>
+              <span>2020 — 2022</span>
+              <p class="timeline-text">
+                PUC (Pre-University Course)
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Guru Nanak Public School, Bidar</h4>
+              <span>Finished 2020</span>
+              <p class="timeline-text">
+                1st to 10th Standard
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <br><br>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Internships</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Scontinent Technology, Bangalore</h4>
+              <span>Current</span>
+              <p class="timeline-text">
+                AI & Data Science Intern. Working on VTU internship projects.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Gyaankool Labs</h4>
+              <span>Software Intern</span>
+              <p class="timeline-text">
+                Worked on ML-based projects. Developed end-to-end solutions and learned model deployment.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Internpe</h4>
+              <span>Web Development Intern</span>
+              <p class="timeline-text">
+                Built web-based projects using HTML, CSS, and Javascript.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Mobile Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Pub.dev</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Mobile Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Pub.dev</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/swetha-mehtre/SMART-AI-MULTIMODAL-EARLY-DISEASE-PREDICTOR-APPLICATION"
+                target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.jpg" alt="AI Disease Predictor" loading="lazy">
+                </figure>
+                <h3 class="project-title">AI Disease Predictor</h3>
+                <p class="project-category">AI / ML</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/swetha-mehtre/powerbi_amazon_sales_data" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-2.png" alt="Amazon Sales Analysis" loading="lazy">
+                </figure>
+                <h3 class="project-title">Amazon Sales Analysis</h3>
+                <p class="project-category">Data Analysis</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/swetha-mehtre/club-management-system-" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-3.jpg" alt="Club Management System" loading="lazy">
+                </figure>
+                <h3 class="project-title">Club Management System</h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/swetha-mehtre/youtube-song-suggester" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-4.png" alt="YouTube Song Suggester" loading="lazy">
+                </figure>
+                <h3 class="project-title">Song Suggester</h3>
+                <p class="project-category">AI / ML</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/swetha-mehtre/Swiggy-Food-Anlysis-PowerBi-main" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-5.png" alt="Swiggy Food Analysis" loading="lazy">
+                </figure>
+                <h3 class="project-title">Swiggy Analysis</h3>
+                <p class="project-category">Power BI</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/swetha-mehtre/travel_planner" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-6.png" alt="Travel Planner" loading="lazy">
+                </figure>
+                <h3 class="project-title">Travel Planner</h3>
+                <p class="project-category">Web Applications</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="youtube" data-page="youtube">
+
+        <header>
+          <h2 class="h2 article-title">YouTube Channel</h2>
+          <a href="https://www.youtube.com/@swethamehtre8250" target="_blank"
+            style="color: var(--orange-yellow-crayola); font-size: 14px; margin-left: 20px;">
+            Visit Channel <ion-icon name="open-outline" style="vertical-align: middle;"></ion-icon>
+          </a>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <div
+                style="background: #202022; border-radius: 12px; overflow: hidden; margin-bottom: 20px; padding: 20px; text-align: center;">
+                <ion-icon name="logo-youtube" style="font-size: 48px; color: red; margin: 0 auto 10px;"></ion-icon>
+                <p>Check out my latest videos on YouTube</p>
+                <br>
+                <a href="https://www.youtube.com/@swethamehtre8250" target="_blank" class="form-btn"
+                  style="width: auto; margin: 0 auto;">Watch on YouTube</a>
+              </div>
+              <div class="blog-content">
+                <h3 class="h3 blog-item-title">My YouTube Channel</h3>
+                <p class="blog-text">
+                  I share tutorials and project showcases on AI, Data Science, and more. Click above to visit my channel
+                  directly.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #PUBLICATIONS
+      -->
+
+      <article class="publications" data-page="publications">
+
+        <header>
+          <h2 class="h2 article-title">Publications</h2>
+          <a href="./assets/documents/publication_report.pdf" class="form-btn" target="_blank"
+            style="display: inline-flex; align-items: center; gap: 10px; margin-left: auto; font-size: 14px; padding: 10px 20px;">
+            <ion-icon name="document-text-outline"></ion-icon>
+            <span>View Full Report</span>
+          </a>
+        </header>
+
+        <section class="timeline">
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">MULTIMODAL AI FOR EARLY DISEASE DETECTION</h4>
+              <span>International Research Journal Of Modernization in Engineering Technology and Science
+                (IRJMETS)</span>
+              <span>Volume 07, Issue 12, December 2025</span>
+              <p class="timeline-text">
+                Ref: IRJMETS/Certificate/Volume 07/Issue 12/71200167793 <br>
+                e-ISSN: 2582-5208 <br>
+                DOI: <a href="https://www.doi.org/10.56726/IRJMETS88035" target="_blank"
+                  style="display:inline; color: var(--orange-yellow-crayola);">10.56726/IRJMETS88035</a> <br>
+                Date: 11/01/2026
+              </p>
+              <a href="./assets/documents/publication_report.pdf" class="btn" target="_blank"
+                style="color: var(--orange-yellow-crayola); margin-top: 10px; display: inline-block;">View full
+                Paper</a>
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198059.4530504789!2d-84.6804868950567!3d39.1729605739665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8841b1d3058a5e8f%3A0xc3f5188461f38e6e!2sCincinnati%2C%20OH!5e0!3m2!1sen!2sus!4v1691168128294!5m2!1sen!2sus"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <div class="contact-content">
+
+
+            <div
+              style="margin-bottom: 30px; padding: 25px; background: var(--eerie-black-2); border-radius: 12px; border: 1px solid var(--jet);">
+              <h4 style="color: var(--white-2); margin-bottom: 15px;">Contact Details</h4>
+
+              <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                <div class="icon-box" style="width: 40px; height: 40px; min-width: 40px;">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+                <div>
+                  <p style="font-size: 12px; color: var(--light-gray-70);">Email</p>
+                  <a href="mailto:swethamehtre@gmail.com" class="contact-link"
+                    style="color: var(--white-2);">swethamehtre@gmail.com</a>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                <div class="icon-box" style="width: 40px; height: 40px; min-width: 40px;">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                </div>
+                <div>
+                  <p style="font-size: 12px; color: var(--light-gray-70);">Phone</p>
+                  <a href="tel:+918660137643" class="contact-link" style="color: var(--white-2);">+91 8660137643</a>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                <div class="icon-box" style="width: 40px; height: 40px; min-width: 40px;">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </div>
+                <div>
+                  <p style="font-size: 12px; color: var(--light-gray-70);">LinkedIn</p>
+                  <a href="https://www.linkedin.com/in/swetha-mehtre-6619442a9" target="_blank" class="contact-link"
+                    style="color: var(--white-2);">Swetha Mehtre</a>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 15px;">
+                <div class="icon-box" style="width: 40px; height: 40px; min-width: 40px;">
+                  <ion-icon name="logo-github"></ion-icon>
+                </div>
+                <div>
+                  <p style="font-size: 12px; color: var(--light-gray-70);">GitHub</p>
+                  <a href="https://github.com/swetha-mehtre" target="_blank" class="contact-link"
+                    style="color: var(--white-2);">swetha-mehtre</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- GitHub Workspace Note -->
+            <div
+              style="margin-bottom: 20px; padding: 15px; background: rgba(255, 255, 255, 0.05); border-radius: 10px;">
+              <p style="font-size: 14px; color: var(--light-gray);">
+                <ion-icon name="code-slash-outline"
+                  style="display: inline; vertical-align: middle; margin-right: 5px;"></ion-icon>
+                Looking for the source code? Check out the <a href="https://github.com/swetha-mehtre" target="_blank"
+                  style="display: inline; color: var(--orange-yellow-crayola);">Project Workspace on GitHub</a>.
+              </p>
+            </div>
+
+            <form action="#" class="form" data-form>
+
+              <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+                <input type="email" name="email" class="form-input" placeholder="Email address" required
+                  data-form-input>
+              </div>
+
+              <textarea name="message" class="form-input" placeholder="Your Message" required
+                data-form-input></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+
+            </form>
+          </div>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

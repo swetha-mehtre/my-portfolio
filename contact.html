@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swetha Mehtre - Contact</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="./assets/js/firebase-config.js"></script>
+</head>
+
+<body>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Swetha Mehtre" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Swetha Mehtre">Swetha Mehtre</h1>
+          <p class="title">AI & Data Science Intern</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:swethamehtre@gmail.com" class="contact-link">swethamehtre@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+918660137643" class="contact-link">+91 8660137643</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="calendar-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="2004-01-30">January 30, 2004</time>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Bidar / Mysore / Bangalore</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item"><a href="https://github.com/swetha-mehtre" target="_blank"
+              class="social-link"><ion-icon name="logo-github"></ion-icon></a></li>
+          <li class="social-item"><a href="https://www.linkedin.com/in/swetha-mehtre-6619442a9" target="_blank"
+              class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li class="social-item"><a href="https://www.youtube.com/@swethamehtre8250" target="_blank"
+              class="social-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="index.html" class="navbar-link">About</a></li>
+          <li class="navbar-item"><a href="resume.html" class="navbar-link">Resume</a></li>
+          <li class="navbar-item"><a href="education.html" class="navbar-link">Education</a></li>
+          <li class="navbar-item"><a href="projects.html" class="navbar-link">Projects</a></li>
+          <li class="navbar-item"><a href="youtube.html" class="navbar-link">YouTube</a></li>
+          <li class="navbar-item"><a href="publications.html" class="navbar-link">Publications</a></li>
+          <li class="navbar-item"><a href="contact.html" class="navbar-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <article class="contact active" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198059.4530504789!2d-84.6804868950567!3d39.1729605739665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8841b1d3058a5e8f%3A0xc3f5188461f38e6e!2sCincinnati%2C%20OH!5e0!3m2!1sen!2sus!4v1691168128294!5m2!1sen!2sus"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <!-- Auth Wall -->
+          <div id="auth-wall"
+            style="text-align: center; padding: 40px; background: var(--border-gradient-onyx); border-radius: 20px; border: 1px solid var(--jet); margin-top: 20px;">
+            <p style="margin-bottom: 20px; color: var(--light-gray-70);">Only verified users can view contact details
+              and send messages.</p>
+            <button id="login-btn" class="form-btn"
+              style="width: auto; margin: 0 auto; display: flex; align-items: center; gap: 10px;">
+              <ion-icon name="logo-google"></ion-icon>
+              <span>Sign in with Google</span>
+            </button>
+            <p id="auth-message" style="margin-top: 15px; color: var(--orange-yellow-crayola); font-weight: 500;"></p>
+          </div>
+
+          <!-- Hidden Contact Content -->
+          <div id="contact-content" style="display: none;">
+            <div
+              style="margin-bottom: 30px; padding: 25px; background: var(--eerie-black-2); border-radius: 12px; border: 1px solid var(--jet);">
+              <h4 style="color: var(--white-2); margin-bottom: 15px;">Contact Details</h4>
+              <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                <div class="icon-box" style="width: 40px; height: 40px; min-width: 40px;"><ion-icon
+                    name="mail-outline"></ion-icon></div>
+                <div>
+                  <p style="font-size: 12px; color: var(--light-gray-70);">Email</p>
+                  <a href="mailto:swethamehtre@gmail.com" class="contact-link"
+                    style="color: var(--white-2);">swethamehtre@gmail.com</a>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                <div class="icon-box" style="width: 40px; height: 40px; min-width: 40px;"><ion-icon
+                    name="phone-portrait-outline"></ion-icon></div>
+                <div>
+                  <p style="font-size: 12px; color: var(--light-gray-70);">Phone</p>
+                  <a href="tel:+918660137643" class="contact-link" style="color: var(--white-2);">+91 8660137643</a>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                <div class="icon-box" style="width: 40px; height: 40px; min-width: 40px;"><ion-icon
+                    name="logo-linkedin"></ion-icon></div>
+                <div>
+                  <p style="font-size: 12px; color: var(--light-gray-70);">LinkedIn</p>
+                  <a href="https://www.linkedin.com/in/swetha-mehtre-6619442a9" target="_blank" class="contact-link"
+                    style="color: var(--white-2);">Swetha Mehtre</a>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 15px;">
+                <div class="icon-box" style="width: 40px; height: 40px; min-width: 40px;"><ion-icon
+                    name="logo-github"></ion-icon></div>
+                <div>
+                  <p style="font-size: 12px; color: var(--light-gray-70);">GitHub</p>
+                  <a href="https://github.com/swetha-mehtre" target="_blank" class="contact-link"
+                    style="color: var(--white-2);">swetha-mehtre</a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="margin-bottom: 20px; padding: 15px; background: rgba(255, 255, 255, 0.05); border-radius: 10px;">
+              <p style="font-size: 14px; color: var(--light-gray);">
+                <ion-icon name="code-slash-outline"
+                  style="display: inline; vertical-align: middle; margin-right: 5px;"></ion-icon>
+                Looking for the source code? Check out the <a href="https://github.com/swetha-mehtre" target="_blank"
+                  style="display: inline; color: var(--orange-yellow-crayola);">Project Workspace on GitHub</a>.
+              </p>
+            </div>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+                <input type="email" name="email" class="form-input" placeholder="Email address" required
+                  data-form-input>
+              </div>
+              <textarea name="message" class="form-input" placeholder="Your Message" required
+                data-form-input></textarea>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+        </section>
+      </article>
+
+    </div>
+
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Auth Logic -->
+  <script>
+    const loginBtn = document.getElementById('login-btn');
+    const contactContent = document.getElementById('contact-content');
+    const authWall = document.getElementById('auth-wall');
+    const authMessage = document.getElementById('auth-message');
+
+    function showContent(username) {
+      authWall.style.display = 'none';
+      contactContent.style.display = 'block';
+      authMessage.innerText = `Welcome, ${username}!`;
+    }
+
+    if (loginBtn) {
+      loginBtn.addEventListener('click', () => {
+
+        // 1. Check for Placeholder Config (Dev Mode)
+        // We access the global firebaseConfig object if possible, or check typical error conditions
+        /* Note: cannot easily access localized firebaseConfig variable from here if it is not global, 
+           but we can try-catch the auth call. */
+
+        // 2. Check for Local File Protocol (Fix for "operation not supported")
+        if (window.location.protocol === 'file:') {
+          alert("Development Notice: Google Sign-In requires a live server (http/https) and does not work on local files (file://). \n\nBypassing authentication for local testing!");
+          showContent("Local Developer");
+          return;
+        }
+
+        if (typeof firebase === 'undefined' || typeof auth === 'undefined') {
+          authMessage.innerText = "Error: Firebase is not configured.";
+          return;
+        }
+
+        auth.signInWithPopup(provider)
+          .then((result) => {
+            const user = result.user;
+            console.log("User signed in:", user);
+            showContent(user.displayName);
+          }).catch((error) => {
+            console.error("Auth Error:", error);
+
+            // Fallback for placeholder keys if typical error occurs
+            if (error.code === 'auth/api-key-not-valid' || error.code === 'auth/internal-error') {
+              alert("Firebase Config Error: It looks like you haven't added your real API keys yet.\n\nSimulating login so you can see the layout.");
+              showContent("Guest (Simulated)");
+            } else {
+              authMessage.innerText = "Authentication failed: " + error.message;
+            }
+          });
+      });
+    }
+
+    // Check if already signed in (only works on http/https)
+    if (typeof auth !== 'undefined' && window.location.protocol !== 'file:') {
+      auth.onAuthStateChanged((user) => {
+        if (user) {
+          showContent(user.displayName);
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
